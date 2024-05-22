@@ -71,7 +71,7 @@ public class DataManager : MonoBehaviour
 
     private void SaveJSONToFile()
     {
-        string data = "[";
+        /*string data = "[";
         foreach (CharacterPosition cp in playerPos.positions)
         {
             data += JsonUtility.ToJson(cp) + ",\n";
@@ -81,7 +81,7 @@ public class DataManager : MonoBehaviour
             data += JsonUtility.ToJson(cp) + ",\n";
         }
         data += "]";
-        FileManager.WriteToFile("positions.json", data);
+        FileManager.WriteToFile("positions.json", data);*/
 
         // Forma alternativa
         FileManager.WriteToFile("playerPostions.json", JsonUtility.ToJson(playerPos));
